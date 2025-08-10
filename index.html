@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/output.css" rel="stylesheet">
+    <title>Rollan Sharipov</title>
+    <script src="index.js" defer></script>
+</head>
+<body class="m-0 bg-background text-main-green">
+<div id="floating-elements" class="fixed top-0 left-0 w-full h-full z-1 pointer-events-none"></div>
+<main class="xl:mx-30 lg:mx-16 mx-4 relative z-2">
+    <header id="header" class="header-container flex fixed xl:left-30 xl:right-30 lg:left-16 lg:right-16 left-4 right-4 top-0 z-10 shadow-green bg-black items-center justify-between px-10 py-6 my-10 rounded-3xl border-solid border-1 border-main-green">
+        <div class="text-shadow-green truncate font-bold lg:text-2xl md:text-xl text-sm">
+            > rollan_sharipov.exe
+        </div>
+
+        <nav class="md:block hidden">
+            <ul class="flex xl:gap-12 lg:gap-8 md:gap-4 gap-2 font-bold nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="burger-menu block md:!hidden" id="burger-menu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+    </header>
+
+    <section class="flex flex-col items-center justify-center mb-20 h-[100vh]" id="home">
+        <div class="hello-card">
+            <h1 class="xl:text-6xl lg:text-4xl md:text-2xl text-xl">>ROLLAN_SHARIPOV</h1>
+
+            <span id="hello-text" class="text-shadow-cyan text-center text-main-cyan lg:text-2xl text-lg h-8" ></span>
+        </div>
+    </section>
+
+    <section class="flex flex-col gap-12 items-center h-fit mb-20" id="work">
+        <h2 class="section-title">// Work Experience</h2>
+
+        <div class="grid md:grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] md:grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-6">
+            <div class="work-card">
+                <span class="lg:text-3xl text-xl text-main-cyan font-bold">Beeline Kazakhstan</span>
+
+                <p class="my-3">
+                    Development of an admin panel for user application management, optimized frontend with reusable components, and enhanced error tracking—resulting in significant reductions in support tickets, redundant code, and bug reports.
+                </p>
+
+                <div class="flex gap-2 flex-wrap">
+                    <span class="work-card__tool">Javascript</span>
+                    <span class="work-card__tool">Typescript</span>
+                    <span class="work-card__tool">Vue.js</span>
+                    <span class="work-card__tool">React</span>
+                    <span class="work-card__tool">Next.js</span>
+                    <span class="work-card__tool">MongoDB</span>
+                    <span class="work-card__tool">Vitest</span>
+                </div>
+            </div>
+
+            <div class="work-card">
+                <span class="lg:text-3xl text-xl text-main-cyan font-bold">Aitu-Dala</span>
+
+                <p class="my-3">
+                    Developed and maintained core frontend infrastructure, including an admin panel, reusable components, and a corporate icon npm package. Improved development efficiency and product reliability by implementing unit tests (85% coverage), reducing bugs and support tickets significantly.
+                </p>
+
+                <div class="flex gap-2 flex-wrap">
+                    <span class="work-card__tool">Javascript</span>
+                    <span class="work-card__tool">Typescript</span>
+                    <span class="work-card__tool">Vue.js</span>
+                    <span class="work-card__tool">Storybook</span>
+                    <span class="work-card__tool">Jest</span>
+                </div>
+            </div>
+
+            <div class="work-card">
+                <span class="lg:text-3xl text-xl text-main-cyan font-bold">QLT</span>
+
+                <p class="my-3">
+                    Improved website discoverability and user experience through SEO enhancements and frontend performance optimizations, resulting in a 20% Core Web Vitals boost. Integrated monitoring tools to track user behavior and streamline bug reporting.
+                </p>
+
+                <div class="flex gap-2 flex-wrap">
+                    <span class="work-card__tool">Javascript</span>
+                    <span class="work-card__tool">Typescript</span>
+                    <span class="work-card__tool">Vue.js</span>
+                    <span class="work-card__tool">Nuxt.js</span>
+                </div>
+            </div>
+
+            <div class="work-card">
+                <span class="lg:text-3xl text-xl text-main-cyan font-bold">Rocket Study</span>
+
+                <p class="my-3">
+                    Delivered full-stack solutions with a focus on SEO, performance optimization, and secure user authentication. Implemented role-based access control and built scalable infrastructure to enhance platform security and user retention.
+                </p>
+
+                <div class="flex gap-2 flex-wrap">
+                    <span class="work-card__tool">Javascript</span>
+                    <span class="work-card__tool">Vue.js</span>
+                    <span class="work-card__tool">PHP</span>
+                    <span class="work-card__tool">Laravel</span>
+                    <span class="work-card__tool">PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-20 flex flex-col gap-12" id="skills">
+        <h2 class="section-title">// Skills</h2>
+
+        <div class="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-6">
+            <div class="skill-card">
+                <div class="mb-3 text-4xl">⚛️</div>
+                <span class="font-bold">Frameworks</span>
+                <p>Vue.js, React, Next.js, Nuxt.js, Pinia, Redux, React Hooks, Node.js</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="mb-3 text-4xl">📝</div>
+                <span class="font-bold">Languages</span>
+                <p>Javascript, Typescript, HTML, CSS, SQL</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="mb-3 text-4xl">🎨</div>
+                <span class="font-bold">Styling / CSS Tools</span>
+                <p>SASS / SCSS, Tailwind CSS</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="mb-3 text-4xl">🗄️</div>
+                <span class="font-bold">Databases</span>
+                <p>MongoDB, SQL</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="mb-3 text-4xl">🔧</div>
+                <span class="font-bold">Tools & Platforms</span>
+                <p>Git, Gitlab, Sentry</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-20" id="contact">
+        <h2 class="section-title">// Contacts</h2>
+
+        <div class="contact-box">
+            <div class="flex flex-col gap-1 mb-3">
+                <span class="lg:text-2xl text-lg font-bold">E-mail:</span>
+                <a class="text-main-cyan text-sm lg:text-base" href="mailto:rollan.sharipov@gmail.com">rollan.sharipov@gmail.com</a>
+            </div>
+
+            <div class="flex flex-col gap-1 mb-3">
+                <span class="lg:text-2xl text-lg font-bold">LinkedIn:</span>
+                <a class="text-main-cyan text-sm lg:text-base" href="https://www.linkedin.com/in/rollan-sharipov" target="_blank">
+                    www.linkedin.com/in/rollan-sharipov
+                </a>
+            </div>
+
+            <div class="flex flex-col gap-1 mb-3">
+                <span class="lg:text-2xl text-lg font-bold">Phone:</span>
+                <a class="text-main-cyan text-sm lg:text-base" href="tel:+77477427242">+7 747 742 72 42</a>
+            </div>
+
+            <div class="flex flex-col gap-1 mb-3">
+                <span class="lg:text-2xl text-lg font-bold">Github</span>
+                <a class="text-main-cyan text-sm lg:text-base" href="https://github.com/Rokatoka" target="_blank">
+                    https://github.com/Rokatoka
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="p-16 text-center border-solid border-t opacity-60">
+        <span class="text-sm lg:text-base">
+            // © 2025 ROLLAN_SHARIPOV.exe
+        </span>
+</footer>
+</body>
+</html>
