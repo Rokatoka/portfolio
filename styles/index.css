@@ -137,6 +137,17 @@ body::before {
     box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
 }
 
+#mobile-menu-overlay {
+    @media screen and (min-width: 768px){
+        display: none !important;
+    }
+}
+
+.mobile-nav {
+    transform: translateY(-100%);
+    transition: transform .3s ease;
+}
+
 .burger-menu {
     width: 20px;
     height: 15px;
@@ -145,7 +156,7 @@ body::before {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 20;
 }
 
 .burger-line {
@@ -227,7 +238,7 @@ body::before {
 
 .section-title {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
     color: var(--color-main-green);
     text-shadow:

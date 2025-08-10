@@ -59,7 +59,30 @@ const handlePageScroll = () => {
     })
 }
 
+const headerMenuListener = () => {
+    const burger = document.getElementById('burger-menu')
+    const mobileMenu = document.getElementById('mobile-menu-overlay')
+    const mobileMenuNav = document.getElementById('mobile-menu-nav')
+
+    burger.addEventListener('click', () => {
+        mobileMenu.style.display = 'block'
+        document.body.style.overflow = 'hidden'
+        setTimeout(() => {
+            mobileMenuNav.style.transform = 'translateY(0)'
+        }, 0)
+    })
+
+    mobileMenu.addEventListener('click', () => {
+        mobileMenuNav.style.transform = 'translateY(-100%)'
+        setTimeout(() => {
+            mobileMenu.style.display = 'none'
+            document.body.style.overflow = 'auto'
+        }, 100)
+    })
+}
+
 setInterval(generateRandomElements, 2000)
 typingEffect()
 
 handlePageScroll()
+headerMenuListener()

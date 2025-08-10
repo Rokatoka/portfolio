@@ -9,7 +9,17 @@
 </head>
 <body class="m-0 bg-background text-main-green">
 <div id="floating-elements" class="fixed top-0 left-0 w-full h-full z-1 pointer-events-none"></div>
-<main class="xl:mx-30 lg:mx-16 mx-4 relative z-2">
+<div id="mobile-menu-overlay" class="bg-gray-900/50 z-30 h-screen fixed top-0 left-0 right-0 hidden overflow-hidden">
+    <nav id="mobile-menu-nav" class="bg-black/90 py-10 px-4 mobile-nav">
+        <ul class="flex flex-wrap justify-evenly gap-2 font-bold">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<main class="xl:mx-30 lg:mx-16 mx-4 z-2">
     <header id="header" class="header-container flex fixed xl:left-30 xl:right-30 lg:left-16 lg:right-16 left-4 right-4 top-0 z-10 shadow-green bg-black items-center justify-between px-10 py-6 my-10 rounded-3xl border-solid border-1 border-main-green">
         <div class="text-shadow-green truncate font-bold lg:text-2xl md:text-xl text-sm">
             > rollan_sharipov.exe
